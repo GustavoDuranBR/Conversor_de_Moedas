@@ -5,8 +5,8 @@
 ## Sobre o projeto
 
 <h5 align="center">🚧 Versão do projeto - 1.0.1 🚀 em construção...🚧</h5>
-Um sistema que realiza a conversão do Real para o Dólar e Euro.
-O sistema busca informações da conversão em tempo real e exibe para o usuário.
+Um sistema que realiza a conversão do Real BRL para o Dólar USD e Euro EUR.
+O sistema busca informações da conversão em tempo real utilizando o método GET e exibe o valor para o usuário.
 
 O formulário é composto pelos seguintes campos:
 * Valor desejado       
