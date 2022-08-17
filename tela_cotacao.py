@@ -26,11 +26,11 @@ while True:
         conv_btc_br = valor / btc_brl
         conv_btc_us = valor / btc_usd
         texto(data_string)
-        brl = (round(valor, 2))
-        usd = (round(conv_dolar, 2))
-        eur = (round(conv_euro, 2))
-        btc_br = (round(conv_btc_br, 8))
-        btc_us = (round(conv_btc_us, 8))
+        brl = f'{valor:.2f}'
+        usd = f'{conv_dolar:.2f}'
+        eur = f'{conv_euro:.2f}'
+        btc_br = f'{conv_btc_br:.6f}'
+        btc_us = f'{conv_btc_us:.6f}'
         brl_texto = str(brl).replace('.', ',')
         usd_texto = str(usd).replace('.', ',')
         eur_texto = str(eur).replace('.', ',')

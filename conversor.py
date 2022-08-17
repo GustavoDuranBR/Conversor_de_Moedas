@@ -9,7 +9,7 @@ def texto(msg):
     print('=' * tam)
 
 
-url = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-USD,BTC-BRL')
+url = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,BTC-USD')
 
 data = datetime.now()
 data_string = data.strftime('%d/%m/%Y %H:%M')
