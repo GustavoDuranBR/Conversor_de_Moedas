@@ -43,3 +43,4 @@ while True:
         print(f'₿-U$ {btc_us_texto}')
 
 janela.close()
+
