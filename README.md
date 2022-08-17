@@ -12,6 +12,7 @@ O formulário é composto pelos seguintes campos:
 * Valor desejado       
 * Dólar (cotação em tempo real)
 * Euro  (cotação em tempo real)
+* BitCoin (cotação em tempo real)
   * Botão Converter
   * Botão Cancelar
   * Bloco de texto para exibir os valores
