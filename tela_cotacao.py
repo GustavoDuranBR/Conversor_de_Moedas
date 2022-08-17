@@ -4,8 +4,10 @@ from conversor import *
 layout = [
     [sg.Text('Cotação de Moedas')],
     [sg.Text('Valor desejado: R$'), sg.Input(size=(15, 0), key='texto')],
-    [sg.Text('Dólar'), sg.Text(f'USD U$ {dolar:.3}')],
-    [sg.Text('Euro '), sg.Text(f'EUR €$ {euro:.3}')],
+    [sg.Text(f'U$ {dolar:.3}')],
+    [sg.Text(f'€$ {euro:.3}')],
+    [sg.Text(f'₿$ {btc_brl}')],
+    [sg.Text(f'₿$ {btc_usd}')],
     [sg.Button('Converter'), sg.Button('Cancelar')],
     [sg.Output(size=(45, 15))]
 ]
@@ -21,15 +23,23 @@ while True:
         valor = float(texto_entrada)
         conv_dolar = valor / dolar
         conv_euro = valor / euro
+        conv_btc_br = valor / btc_brl
+        conv_btc_us = valor / btc_usd
         texto(data_string)
         brl = (round(valor, 2))
         usd = (round(conv_dolar, 2))
         eur = (round(conv_euro, 2))
+        btc_br = (round(conv_btc_br, 8))
+        btc_us = (round(conv_btc_us, 8))
         brl_texto = str(brl).replace('.', ',')
         usd_texto = str(usd).replace('.', ',')
         eur_texto = str(eur).replace('.', ',')
-        print(f'BRL {brl_texto}')
-        print(f'USD {usd_texto}')
-        print(f'EUR {eur_texto}')
+        btc_br_texto = str(btc_br).replace('.', ',')
+        btc_us_texto = str(btc_us).replace('.', ',')
+        print(f'R$ {brl_texto}')
+        print(f'U$ {usd_texto}')
+        print(f'€$ {eur_texto}')
+        print(f'₿-R$ {btc_br_texto}')
+        print(f'₿-U$ {btc_us_texto}')
 
 janela.close()
