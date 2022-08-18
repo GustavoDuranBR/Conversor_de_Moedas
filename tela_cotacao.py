@@ -1,6 +1,8 @@
 import PySimpleGUI as sg
 from conversor import *
 
+sg.theme('Dark Grey 15')
+
 layout = [
     [sg.Text('Cotação de Moedas')],
     [sg.Text('Valor desejado: R$'), sg.Input(size=(15, 0), key='texto')],
