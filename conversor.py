@@ -9,6 +9,23 @@ def texto(msg):
     print('=' * tam)
 
 
+# Tratar erros
+def leia_float(msg):
+    ok = False
+    valor = 0
+    while True:
+        n = str(input(msg))
+        if n.isnumeric():
+            valor = float(n)
+            ok = True
+        else:
+            print(f'\033[0;31mERRO! Digite um número válido (utilize PONTO ao invés de VIRGULA\033[m')
+        if ok:
+            break
+    return valor
+
+
+
 url = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-USD,BTC-BRL')
 
 data = datetime.now()
