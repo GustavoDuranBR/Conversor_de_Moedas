@@ -5,7 +5,7 @@ sg.theme('Dark Grey 15')
 
 layout = [
     [sg.Text('Cotação de Moedas')],
-    [sg.Text('Valor desejado: R$'), sg.Input(size=(15, 0), key='texto')],
+    [sg.Text('Valor desejado: R$'), sg.InputText(size=(15, 0), key='valor')],
     [sg.Text(f'U$ {dolar:.3}')],
     [sg.Text(f'€$ {euro:.3}')],
     [sg.Text(f'₿$ {btc_brl}')],
@@ -21,8 +21,9 @@ while True:
     if evento == sg.WIN_CLOSED or evento == 'Cancelar':
         break
     if evento == 'Converter':
-        texto_entrada = valores['texto']
-        valor = float(texto_entrada)
+        texto_entrada = valores['valor']
+        entrada_str = str(texto_entrada)
+        valor = float(entrada_str)
         conv_dolar = valor / dolar
         conv_euro = valor / euro
         conv_btc_br = valor / btc_brl
