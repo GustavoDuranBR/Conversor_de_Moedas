@@ -23,4 +23,3 @@ dolar = (float(f'{cotacao_dolar}'))
 euro = (float(f'{cotacao_euro}'))
 btc_brl = (float(f'{real_bitcoin}'))
 btc_usd = (float(f'{dolar_bitcoin}'))
-
