@@ -19,6 +19,7 @@ cotacao_dolar = request['USDBRL']['bid']
 cotacao_euro = request['EURBRL']['bid']
 real_bitcoin = request['BTCBRL']['bid']
 dolar_bitcoin = request['BTCUSD']['bid']
+
 dolar = (float(f'{cotacao_dolar}'))
 euro = (float(f'{cotacao_euro}'))
 btc_brl = (float(f'{real_bitcoin}'))
