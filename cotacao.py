@@ -13,7 +13,9 @@ class TelaPrincipal:
             [sg.Text(f'₿$ {btc_brl}')],
             [sg.Text(f'₿$ {btc_usd}')],
             [sg.Button('Converter'), sg.Button('Cancelar')],
-            [sg.Output(size=(45, 15))]
+            [sg.Output(size=(45, 15))],
+            [sg.Text('Developed by Gustavo Duran')],
+            [sg.Text('https://github.com/GustavoDuranBR')]
         ]
 
         janela = sg.Window('Conversor de Moedas', layout)
