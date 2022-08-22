@@ -1,6 +1,6 @@
 # Conversor_de_Moedas #
 
-![banner_form](https://user-images.githubusercontent.com/81047389/185225729-76dac708-cb34-474b-a420-6da598e297d0.png)
+![banner_form](https://user-images.githubusercontent.com/81047389/185815811-c71c9a23-f5ac-4794-a452-94d2c110b394.png)
 
 ## Sobre o projeto
 
