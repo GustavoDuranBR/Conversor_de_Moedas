@@ -58,3 +58,4 @@ class TelaPrincipal:
 
 tela = TelaPrincipal()
 tela.iniciar()
+
