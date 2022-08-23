@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 from conversor import *
+from decimal import Decimal
 
 
 class TelaPrincipal:
@@ -27,6 +28,15 @@ class TelaPrincipal:
                 break
             if self.evento == 'Converter':
                 texto_entrada = self.valores['valor']
+                if ',' in texto_entrada:
+                    if '.' in texto_entrada:
+                        texto_entrada = texto_entrada.replace('.', ',')
+                    texto_entrada = texto_entrada.replace(',', '.')
+                try:
+                    texto_entrada = Decimal(texto_entrada)
+                except:
+                    print('Digite um número válido.')
+                    continue
                 entrada_str = str(texto_entrada).replace(',', '.')
                 valor = float(entrada_str)
                 conv_dolar = valor / dolar
@@ -58,4 +68,3 @@ class TelaPrincipal:
 
 tela = TelaPrincipal()
 tela.iniciar()
-
