@@ -17,7 +17,7 @@ class TelaPrincipal:
             [sg.Output(size=(45, 15))],
             [sg.Text('Developed by Gustavo Duran')],
             [sg.Text('https://github.com/GustavoDuranBR')],
-            [sg.Text('Ver:1.0.3')]
+            [sg.Text('Ver:1.0.5')]
         ]
 
         janela = sg.Window('Conversor de Moedas', layout)
