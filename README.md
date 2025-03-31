@@ -1,4 +1,4 @@
-# Conversor_de_Moedas #
+# Cotação Fácil #
 
 ![alt text](image.png)
 ![alt text](image-1.png)
