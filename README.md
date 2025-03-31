@@ -1,7 +1,7 @@
 # Conversor_de_Moedas #
 
-![banner_form](https://user-images.githubusercontent.com/81047389/186051696-5c194506-dc73-47f6-b3d6-e52d61960327.png)
-![banner_form](https://user-images.githubusercontent.com/81047389/186051935-11f11c9c-20da-48f9-a1c8-a2d0a4a5e141.png)
+![alt text](image.png)
+![alt text](image-1.png)
 
 
 
@@ -9,14 +9,14 @@
 ## Sobre o projeto
 
 <h5 align="center">🚧 Versão do projeto - 1.0.5 🚀 em construção...🚧</h5>
-Um sistema que realiza a conversão do Real BRL para o Dólar USD e Euro EUR.
+Um sistema que realiza a conversão do Real BRL para o Dólar USD, Euro EUR, Libra GBP, Peso Argentino ARS, Iene Japonês JPY.
 O sistema busca informações da conversão em tempo real utilizando o método GET e exibe o valor para o usuário.
 
-O formulário é composto pelos seguintes campos:
-* Valor desejado (Caso digite um caractere inválido, o usuário recebe uma mensage: "Digite um número válido.")     
+O formulário é composto pelos seguintes campos:    
 * Dólar (cotação em tempo real)
 * Euro  (cotação em tempo real)
-* BitCoin (cotação em tempo real)
+* Libra (cotação em tempo real)
+* Peso Argentino (cotação em tempo real)
+* Iene Japonês (cotação em tempo real)
   * Botão Converter
-  * Botão Cancelar
   * Bloco de texto para exibir os valores

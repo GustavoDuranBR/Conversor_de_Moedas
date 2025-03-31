@@ -1,0 +1,23 @@
+# Configurações de ambiente de desenvolvimento
+.idea/
+*.iml
+/workspace.xml
+/shelf/
+
+# Arquivos gerados automaticamente pelo Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambientes virtuais
+venv/
+env/
+
+# Build e distribuição
+/build/
+/dist/
+
+# Binários e executáveis gerados
+*.exe
+*.spec
